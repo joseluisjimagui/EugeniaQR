@@ -10,46 +10,36 @@ export default class SignUp extends Component {
         password: '',
         noApartment: 0,
         date: '',
-    }
-
-    async componentDidMount(){
-        const res = await axios.get('http://localhost:5000/users')
-        console.log(res)
-    }
+    }    
 
     onChangeName = (e) => {
         this.setState({
             name: e.target.value
-        })
-        console.log(e.target.value)
+        })        
     }
 
     onChangeLastname = (e) => {
         this.setState({
             lastname: e.target.value
-        })
-        console.log(e.target.value)
+        })        
     }
 
     onChangeEmail = (e) => {
         this.setState({
             email: e.target.value
-        })
-        console.log(e.target.value)
+        })        
     }
 
     onChangePassword = (e) => {
         this.setState({
             password: e.target.value
-        })
-        console.log(e.target.value)
+        })        
     }
 
     onChangeNoDepartment = (e) => {
         this.setState({
             noApartment: e.target.value
-        })
-        console.log(e.target.value)
+        })        
     }
 
     onSubmit = async e => {
