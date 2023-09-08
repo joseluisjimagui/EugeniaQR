@@ -48,3 +48,4 @@ Extras
 ●Utilización de variables de entorno
 ●Utilizacion de MongoDB
 ●Utilizacion de Insomia
+●Utilizacion de Objetos JSON
