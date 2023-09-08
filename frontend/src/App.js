@@ -12,13 +12,16 @@ function App() {
     <div>
       <Header />
       <BrowserRouter>
-      <Routes>
-        <Route path="/createqr" element={<CreateQR />}/> 
-        <Route path="/login" element={<Login />}/>         
-        <Route path="/showqr" element={<ShowQR />}/>      
-        <Route path="/singup" element={<SignUp />}/>                           
-        
-      </Routes>
+      <div className='container p-4'>
+        <Routes>
+          <Route path="/createqr" element={<CreateQR />}/> 
+          <Route path="/login" element={<Login />}/>         
+          <Route path="/showqr" element={<ShowQR />}/>      
+          <Route path="/signup" element={<SignUp />}/>                           
+          
+        </Routes>
+      </div>
+      
     </BrowserRouter>
 
     </div>

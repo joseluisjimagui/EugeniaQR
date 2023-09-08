@@ -16,6 +16,9 @@ export default class Header extends Component {
                                     <a class="nav-link active" aria-current="page" href="/login">Login</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/signup">Sign Up</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/createqr">Create QR</a>
                                 </li>  
                                 <li class="nav-item">
