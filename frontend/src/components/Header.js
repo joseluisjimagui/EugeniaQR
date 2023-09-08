@@ -13,13 +13,13 @@ export default class Header extends Component {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Login</a>
+                                    <a class="nav-link active" aria-current="page" href="/login">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Create QR</a>
+                                    <a class="nav-link" href="/createqr">Create QR</a>
                                 </li>  
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Show QR</a>
+                                    <a class="nav-link" href="showqr">Show QR</a>
                                 </li>                                 
                                                                                           
                             </ul>                            
