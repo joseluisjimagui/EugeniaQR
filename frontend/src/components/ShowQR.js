@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-const QRCode = require('qrcode')
+import QRCode from "react-qr-code";
 
 export default class ShowQR extends Component {
     state = {        
         qrs : [],
+        text: ''
     }
 
     async componentDidMount(){
@@ -15,24 +16,15 @@ export default class ShowQR extends Component {
         console.log(this.state.qrs)    
         
         const qrInfo = this.state.qrs[0]
-        const textToQR = 'Name: '+qrInfo.fullname+', entry day: '+qrInfo.entryday+', entry date: '+qrInfo.entrydate+', checkout: '+qrInfo.checkout
-        QRCode.toFile('../../public/qr.png', textToQR,  {
-            errorCorrectionLevel: 'H'            
-          }, function(err, data) {
-            if (err) throw err;
-            console.log(data);
-          });
+        
+        this.state.text = 'Name: '+qrInfo.fullname+', entry day: '+qrInfo.entryday+', entry date: '+qrInfo.entrydate+', checkout: '+qrInfo.checkout
+        
     }
 
     render() {
         return (
             <div class="container-sm">
-                <div class="card" style={{width: "18rem;"}}>
-                    <img src='../../public/qr.png' class="card-img-top" />
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                </div>
+                <QRCode value={this.state.text} />, 
             </div>
         )
     }
