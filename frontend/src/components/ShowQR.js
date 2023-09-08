@@ -1,6 +1,19 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 export default class ShowQR extends Component {
+    state = {        
+        qrs : [],
+    }
+
+    async componentDidMount(){
+        const res = await axios.get('http://localhost:5000/qrs')
+        this.setState({
+            qrs: res.data
+        })   
+        console.log(this.state.qrs)        
+    }
+
     render() {
         return (
             <div class="container-sm">
