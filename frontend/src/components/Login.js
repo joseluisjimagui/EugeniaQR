@@ -39,8 +39,7 @@ export default class Login extends Component {
             }
             else{
                 console.log('Intenta de nuevo')
-            }
-            
+            }            
         }
         else{
             console.log('Intenta de nuevo')
