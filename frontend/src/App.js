@@ -7,6 +7,7 @@ import ShowQR from './components/ShowQR'
 import SignUp from './components/SignUp'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 function App() {
   return (
     <div>

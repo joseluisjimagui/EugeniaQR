@@ -26,7 +26,7 @@ export default class Login extends Component {
         this.setState({
             users: res.data
         })   
-        console.log(this.state.users)
+        console.log(this.state.users)        
     }
 
     onSubmit = async e => {        
@@ -35,7 +35,7 @@ export default class Login extends Component {
 
         if(typeof(userResult) != undefined ){
             if(userResult.password == this.state.password){
-            console.log("ingresaste");
+            console.log("Ingresaste");
             }
             else{
                 console.log('Intenta de nuevo')
